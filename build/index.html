@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+
+	<title>"КТК" - Костромская топливная компания</title>
+
+	<meta name="description" content="">
+
+	<!-- Mobile friendly viewport -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+	<!-- Style sheet link -->
+	<link href="css/main.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+<!-- header start -->
+<header>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png"></a>
+        </div>
+        <div class="slogan">
+            <p class="text">Длинные литры - лучшее качество</p>
+            <p class="t-map"><a href="#">Карта сети АЗС</a></p>
+        </div>
+        <div class="top-menu">
+            <div class="column">
+                <a href="#">Главная</a>
+                <a href="#">Компания</a>
+                <a href="#">Сеть АЗС</a>
+            </div>
+            <div class="column">
+                <a href="#">Топливо <span>UPGRADE</span></a>
+                <a href="#">Услуги АЗС</a>
+                <a href="#">Система скидок</a>
+            </div>
+            <div class="column">
+                <a href="#">Новости</a>
+                <a href="#">Контакты</a>
+                <a href="#">Личный кабинет</a>
+            </div>
+            <div class="top-contacts">
+                <p>г. Кострома, ул. Магистральная, 8</p>
+                <a class="tel" href="tel:(4942)33-33-61">(4942)33-33-61</a><br />
+                <a href="mailto:ktk@oooktk.ru">ktk@oooktk.ru</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+    <!--Start calculate-->
+    <div class="wrap">
+        <div class="calc">
+
+            <h2>Сколько нужно кружек?</h2>
+            <input class="calc-range m-top-20" type="range" min="1" max="100" step="1" value="1">
+            Количество:<div class="calc-count">1</div>
+            Стоимость<span class="calc-price">100</span> руб
+            <br />
+            <div class="block_calc"><table>
+                <tbody>
+                <tr class="odd">
+                    <td>Марка бензина</td>
+                    <td>
+                    <div class="calc_header">Калькулятор экономии</div>
+                        <div class="form_item">
+                    <input type="checkbox" id="calc_discount">
+                    <label for="calc_discount">У меня есть дисконтная карта</label>
+                </div>
+                    </td>
+                </tr>
+                <tr class="even">
+                    <td>Премиум <span>95</span>
+                    </td>
+                    <td>
+                        <!--<div class="premium_slider" data-discount="2.0000" data-item="4_4" data-val="1" data-price="38.4" data-price-up="34.4" data-min="1" data-max="100"></div>-->
+                        <input class="calc-range m-top-20" type="range" min="1" max="100" step="1" value="1">
+                    </td>
+                </tr>
+                <tr class="odd">
+                    <td>Регуляр <span>92</span>
+                    </td>
+                    <td>
+                        <!--<div class="premium_slider" data-discount="2.0000" data-item="5_5" data-val="1" data-price="36.4" data-price-up="32.6" data-min="1" data-max="100"></div>-->
+                        <input class="calc-range m-top-20" type="range" min="1" max="100" step="1" value="1">
+                    </td>
+                </tr>
+                <tr class="even">
+                    <td>Евро-5 <span>ДТ</span>
+                    </td>
+                    <td>
+                        <!--<div class="premium_slider" data-discount="2.0000" data-item="7_7" data-val="1" data-price="37.5" data-price-up="31.87" data-min="1" data-max="100"></div>-->
+                        <input class="calc-range m-top-20" type="range" min="1" max="100" step="1" value="1">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+                <table>
+                    <tbody>
+                    <tr class="odd"><td>Кол.-во литров</td><td>Отпускная стоимость</td><td>Фактическая стоимость</td> </tr>
+                    <tr class="even">
+                        <td>
+                            <!--<div class="calc_result calc_count" id="calc_count_4_4">1</div>-->
+                            <div class="calc-count">1</div>
+                        </td>
+                        <td>
+                            <!--<div class="calc_result calc_price" id="calc_price_4_4">38.40</div>-->
+                            <span class="calc-price">100</span>
+                        </td>
+                        <td>
+                            <div class="calc_result calc_price_up" id="calc_price_up_4_4">34.40</div>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td>
+                            <!--<div class="calc_result calc_count" id="calc_count_5_5">1</div>-->
+                            <div class="calc-count">1</div>
+                        </td>
+                        <td>
+                            <!--<div class="calc_result calc_price" id="calc_price_5_5">36.40</div>-->
+                            <span class="calc-price">100</span>
+                        </td>
+                        <td>
+                            <div class="calc_result calc_price_up" id="calc_price_up_5_5">32.60</div>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td>
+                            <!--<div class="calc_result calc_count" id="calc_count_7_7">1</div>-->
+                            <div class="calc-count">1</div>
+                        </td>
+                        <td>
+                            <!--<div class="calc_result calc_price" id="calc_price_7_7">37.50</div>-->
+                            <span class="calc-price">100</span>
+                        </td>
+                        <td>
+                            <div class="calc_result calc_price_up" id="calc_price_up_7_7">31.87</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!-- Start footer -->
+<footer>
+
+</footer>
+<!-- End footer -->
+
+
+
+
+<!-- Javascript file source -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
