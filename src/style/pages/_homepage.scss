@@ -71,6 +71,20 @@ header {
   }
 }
 
+.wrap {
+  background: url("../img/bg_top.jpg") no-repeat;
+  background-size: cover;
+  height: 567px;
+  position: relative;
+    .kolonka {
+      position: absolute;
+      bottom: 0;
+      .clock {
+        z-index: 5;
+      }
+  }
+}
+
 
 
 .block_calc .calc_header {

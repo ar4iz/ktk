@@ -11,3 +11,4 @@
 //= modules/testimonial_slider.js
 //= modules/sticky_header.js
 //= modules/input.js
+//= modules/clock.js
