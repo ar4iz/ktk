@@ -29,27 +29,3 @@ $('.go_bottom').click( function(){
   }
   return false;
 });*/
-
-
-function rangeCalc(i) {
-    var tariff = [[2, 75],[5, 70],[10, 66],[20, 62],[50, 58],[100, 55]];
-    $.each(tariff, function() {
-        if (this[0] <= i)
-        {
-            var price = this[1];
-            $('.calc-price').text(i*price);
-        }
-    })
-};
-
-$('.calc-range').on('input', function(){
-    $('.calc-count').text(this.value);
-    rangeCalc(this.value);
-});
-
-$(document).ready(function($) {
-
-    rangeCalc($('.calc-range').val());
-
-
-});

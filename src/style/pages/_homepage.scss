@@ -76,155 +76,100 @@ header {
   background-size: cover;
   height: 567px;
   position: relative;
-    .kolonka {
+    .price_stand {
       position: absolute;
+      left: -50px;
       bottom: 0;
+      img {
+        display: block;
+      }
+      .price_list {
+        list-style: none;
+        color: #ff0000;
+        position: absolute;
+        top: 116px;
+        left: 117px;
+        margin: 0;
+        padding: 0;
+        width: 180px;
+        display: inline-block;
+        li {
+          height: 50px;
+          margin-bottom: 5px;
+          .name {
+            width: 52px;
+            display: inline-block;
+            font-size: 26px;
+            text-align: center;
+            small {
+              display: block;
+              text-transform: uppercase;
+              font-size: 9px;
+              font-weight: 700;
+            }
+          }
+          .price {
+            width: 120px;
+            display: inline-block;
+            text-align: center;
+            font-size: 34px;
+          }
+        }
+      }
       .clock {
+        position: absolute;
         z-index: 5;
+        top: 9px;
+        left: 140px;
+
       }
   }
 }
-
-
-
-.block_calc .calc_header {
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-.block_calc {
-  margin: 0 auto;
-  display: table;
-  width: 750px;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #fff;
-  border-radius: 15px;
-  position: relative;
-  box-shadow: 0.5px 0.866px 6px 0px rgba( 7, 8, 8, 0.15 );
-}
-.block_calc table {
-  float: left;
-}
-.block_calc table:first-child {
-  width: 405px;
-}
-.block_calc table:nth-child(2) tbody {
-  display: block;
-  padding-right: 10px;
-}
-.block_calc table:first-child tr {
-  margin-bottom: 15px;
-  display: block;
-}
-.block_calc table:first-child tr::after {
-  display: table;
-  content: '';
-  clear: both;
-}
-.block_calc table:first-child tr td:first-child span {
-  font-size: 24px;
-  display: block;
-}
-.block_calc::after {
-  position: absolute;
-  display: block;
-  content: '';
-  background: url(images/calc_shadow.png) 0 0 no-repeat transparent;
-  bottom: -36px;
-  left: 0;
-  width: 749px;
-  height: 36px;
-}
-.block_calc table:first-child tr:first-child td:first-child {
-  color: #8696a7;
-  font-size: 9px;
-  text-transform: uppercase;
-  max-width: 45px;
-  margin-top: 18px;
-}
-.block_calc table:first-child .form_item {
-  margin: 0 auto;
-  display: table;
-  margin-top: 5px;
-}
-.block_calc table:first-child tr td:first-child {
-  color: #2c3134;
-  font-size: 9px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  float: left;
-}
-.block_calc table:first-child tr td:nth-child(2) {
-  float: left;
-  padding-left: 30px;
-}
-.block_calc table:nth-child(2) {
-  float: right;
-  position: relative;
-  background: url(../img/table1.png) 0 0 no-repeat;
-  -webkit-background-size: cover;
+.gas {
+  background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
-  padding-bottom: 14px;
+}
+.calculator {
+  max-width: 753px;
   display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  .ranges {
 
-  tbody {
-    display: block;
-    padding-right: 10px;
+    .range_names {
+      padding-left: 30px;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        list-style: none;
+        float: left;
+        padding-top: 20px;
+        padding-right: 20px;
+        li {
+          height: 50px;
+          margin-bottom: 5px;
+          .name {
+            width: 52px;
+            display: inline-block;
+            font-size: 26px;
+            text-align: center;
+            small {
+              display: block;
+              text-transform: uppercase;
+              font-size: 9px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+    .ranges_pickers {
+      float: left;
+    }
   }
 }
-.block_calc table:nth-child(2) tr:not(:last-child) {
-  border-bottom: 1px solid #000;
-}
-.block_calc tr.even, tr.odd {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
 
-.block_calc table:nth-child(2) tr:first-child td {
-  text-transform: uppercase;
-  font-size: 9px;
-  color: #ccc;
-  max-width: 55px;
-  text-align: center;
-}
-.block_calc table:nth-child(2) tr td {
-  padding: 17px 11px;
-  text-align: center;
-}
-.block_calc table:nth-child(2) tr:not(:first-child) td {
-  color: #ff0000;
-  font: 700 24px 'LCD2', Arial, sans-serif;
-}
 
-input[type="range"] {
-  -webkit-appearance: none;
-  border-radius: 2px;
-  width: 200px;
-  height: 3px;
-  background-image: -webkit-linear-gradient(left, #f22 0%, #f22 15%, #fff 15%, #fff 100%);
-  box-shadow: inset #ebb 0 0 5px;
-  outline: none;
-  transition: .1s;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 10px;
-  height: 10px;
-  background: #f22;
-  border-radius: 50%;
-  transition: .1s;
-}
-input[type="range"]::-webkit-slider-thumb:hover,
-input[type="range"]::-webkit-slider-thumb:active {
-  width: 16px;
-  height: 16px;
-}
 
 
