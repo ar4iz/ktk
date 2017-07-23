@@ -12,3 +12,4 @@
 //= modules/sticky_header.js
 //= modules/clock.js
 //= modules/range.js
+//= modules/tab.js
