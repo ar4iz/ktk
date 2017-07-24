@@ -24,6 +24,9 @@ header {
         & a {
           color: #ed1d24;
           text-decoration: underline;
+          background: url("../img/marker.png") left center no-repeat;
+          padding: 2px 0 7px 26px;
+          cursor: pointer;
         }
       }
     }
@@ -39,6 +42,10 @@ header {
           display: block;
           text-decoration: none;
           padding-bottom: 20px;
+          &.account {
+            background: url("../img/acc.png") no-repeat;
+            padding-left: 25px;
+          }
           span {
             font-style: italic;
             font-weight: bold;
@@ -87,15 +94,18 @@ header {
         list-style: none;
         color: #ff0000;
         position: absolute;
-        top: 116px;
-        left: 117px;
+        top: 130px;
+        left: 115px;
         margin: 0;
         padding: 0;
         width: 180px;
         display: inline-block;
         li {
           height: 50px;
-          margin-bottom: 5px;
+          margin-bottom: 4px;
+          &.up {
+            background: url("../img/up.png") no-repeat;
+          }
           .name {
             width: 52px;
             display: inline-block;
@@ -116,39 +126,108 @@ header {
           }
         }
       }
+      #digital_watch {
+        color: #f00;
+        font-size: 26px;
+        font-weight: bold;
+      }
       .clock {
         position: absolute;
         z-index: 5;
-        top: 9px;
+        top: 0;
         left: 140px;
-
       }
   }
+  .kredo {
+    max-width: 300px;
+    float: right;
+    text-align: right;
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url("../img/upgrade.png") 0 0 no-repeat;
+    width: 240px;
+    height: 240px;
+    left: 50%;
+    margin-left: 300px;
+    top: 475px;
+  }
 }
+
 .gas {
-  background: url("../img/bg.jpg") no-repeat;
-  background-size: cover;
+  background: url("../img/bg.jpg") repeat;
+  padding-bottom: 95px;
+  .plus {
+    font-size: 36px;
+    text-align: center;
+  }
+  .prew {
+    display: block;
+    height: 300px;
+    .block {
+      width: 23%;
+    float: left;
+    .drops {
+      background: url("../img/vector.png") no-repeat;
+      display: table;
+      height: 167px;
+      width: 137px;
+      margin-right: 50px;
+      margin-bottom: 10px;
+      .drop {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+    .title {
+      color: #2c3134;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  }
 }
 .calculator {
-  max-width: 753px;
+  width: 753px;
+  height: 262px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  background-color: #fff;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0.5px 0.866px 6px 0px rgba( 7, 8, 8, 0.15 );
+  position: relative;
+  box-sizing: border-box;
   .ranges {
-
+    width: 405px;
+    float: left;
     .range_names {
-      padding-left: 30px;
       ul {
-        padding: 0;
         margin: 0;
         display: inline-block;
         list-style: none;
         float: left;
-        padding-top: 20px;
-        padding-right: 20px;
+        padding-top: 34px;
+        padding-right: 25px;
+        padding-left: 0;
         li {
-          height: 50px;
-          margin-bottom: 5px;
+          padding-bottom: 25px;
+          &.title {
+            color: #8696a7;
+            font-size: 9px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 30px;
+          }
           .name {
             width: 52px;
             display: inline-block;
@@ -161,40 +240,96 @@ header {
               font-weight: 700;
             }
           }
+          &:last-child {
+            padding-bottom: 14px;
+          }
         }
       }
     }
     .ranges_pickers {
       float: left;
+      h3 {
+        &.title {
+          font-size: 24px;
+          text-transform: uppercase;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+      }
+      .card_check {
+        padding-bottom: 25px;
+      }
+    }
+  }
+  & table {
+    background: url("../img/table.png") 0 0 no-repeat;
+    float: right;
+    tbody {
+      display: block;
+      padding-right: 10px;
+      tr {
+        color: #ff0000;
+        font-size: 24px;
+        border-bottom: 1px solid #000;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:first-child {
+          text-transform: uppercase;
+          font-size: 9px;
+          color: #ccc;
+          td:first-child {
+            padding: 17px 11px;
+          }
+        }
+        td {
+          max-width: 55px;
+          text-align: center;
+          padding: 13px 11px;
+        }
+      }
     }
   }
 }
 
 
 .tab-wrapper {
-  margin: 200px auto;
+  margin: 50px auto;
   width: 70%;
-  max-width:500px;
 }
 
 .tab-menu li {
   position:relative;
-  background-color: #fff;
-  color:#bcbcbc;
+  background-color: #d7d7d7;
+  color:#2c3134;
+  font-size: 14px;
   display: inline-block;
   padding: 20px 40px;
   opacity: 0.8;
   cursor:pointer;
+  text-transform: uppercase;
   z-index:0;
+
 }
 
 .tab-menu li:hover {
-  color:#464646;
+  background-color: #fff;
+  color:#ed1d24;
+  font-weight: 700;
+  opacity: 1;
 }
 
 .tab-menu li.active {
-  color:#464646;
+  background-color: #fff;
+  color:#ed1d24;
+  font-weight: 700;
   opacity: 1;
+  &:after {
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #ed1d24;
+  }
 }
 
 .tab-menu li.active:hover {
@@ -207,13 +342,20 @@ header {
   width: 100%;
   padding: 50px;
   min-height:200px;
+  .disk {
+    width: 88px;
+    height: 88px;
+    background: #ed1d24;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
 }
 
 .line {
   position:absolute;
   width: 0;
-  height: 7px;
-  background-color: aqua;
+  height: 4px;
+  background-color: #ed1d24;
   top: 0;
   left: 0;
 }
