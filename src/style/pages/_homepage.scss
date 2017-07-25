@@ -295,19 +295,22 @@ header {
 
 .tab-wrapper {
   margin: 50px auto;
-  width: 70%;
 }
-
+.tab-menu {
+  padding-left: 0;
+}
 .tab-menu li {
   position:relative;
   background-color: #d7d7d7;
   color:#2c3134;
   font-size: 14px;
   display: inline-block;
-  padding: 20px 40px;
+  padding: 20px 0;
   opacity: 0.8;
   cursor:pointer;
+  text-align: center;
   text-transform: uppercase;
+  width: 33%;
   z-index:0;
 
 }
@@ -342,12 +345,36 @@ header {
   width: 100%;
   padding: 50px;
   min-height:200px;
-  .disk {
-    width: 88px;
-    height: 88px;
-    background: #ed1d24;
-    border-radius: 50%;
-    border: 3px solid #fff;
+
+  .opp {
+    display: block;
+    float: left;
+    max-width: 175px;
+    text-align: center;
+  }
+    .disk {
+      width: 88px;
+      height: 88px;
+      background: #ed1d24;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      display: table-cell;
+      vertical-align: middle;
+      & p {
+        span {
+          font-size: 14px;
+        }
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  &:after {
+    background: url("../img/after.png") center center no-repeat;
+    width: 103px;
+    height: 103px;
+    content: '';
+    display: block;
+    z-index: -1;
   }
 }
 
@@ -358,6 +385,84 @@ header {
   background-color: #ed1d24;
   top: 0;
   left: 0;
+}
+
+.callout {
+  list-style-type: none;
+}
+
+/* BASE STYLES FOR EACH */
+.callout li {
+  display: inline-block;
+  /* Real styles */
+  position: relative;
+  max-width: 880px;
+  height: 100px;
+  float: right;
+  padding: 15px;
+  background: #fff0f1 url("../img/info.png") 20px center no-repeat;
+  padding-left: 118px;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+/* TOP */
+.callouts-top:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 23px;
+  top: -42px;
+  border: 10px solid transparent;
+  border-bottom: 32px solid rgb(193,193,193); /* IE8 Fallback */
+  border-bottom: 32px solid rgba(193,193,193,0.5);
+  z-index: 2;
+}
+.callouts-top:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 25px;
+  top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #fff;
+  z-index: 3;
+}
+
+.man {
+  background: url("../img/man.png") no-repeat;
+  .plus_t {
+    max-width: 750px;
+  }
+  .prew {
+    display: block;
+    height: 300px;
+    .block {
+      width: 15%;
+      float: left;
+      .drops {
+        background: url("../img/ellipse.png") no-repeat;
+        display: table;
+        height: 58px;
+        width: 58px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        .drop {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+      .title {
+        color: #2c3134;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 

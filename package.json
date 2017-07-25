@@ -1,8 +1,8 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "project for ahrefs",
-  "author": "Sergeev Sergey",
+  "description": "project for KTK",
+  "author": "Bulan Artur",
   "license": "SEE LICENSE IN LICENSE.DOCX",
   "dependencies": {
     "gulp": "^3.9.0"
