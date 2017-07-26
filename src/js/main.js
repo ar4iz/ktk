@@ -13,3 +13,4 @@
 //= modules/clock.js
 //= modules/range.js
 //= modules/tab.js
+//= modules/map.js

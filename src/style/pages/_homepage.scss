@@ -104,7 +104,14 @@ header {
           height: 50px;
           margin-bottom: 4px;
           &.up {
+            .upi{
             background: url("../img/up.png") no-repeat;
+              position: absolute;
+              left: -21px;
+              top: 63px;
+              width: 30px;
+              height: 30px;
+          }
           }
           .name {
             width: 52px;
@@ -524,6 +531,100 @@ header {
     font-size:0.625em;
       margin-bottom:15px;
   }
+  }
+}
+
+.top-bar {
+  overflow: hidden;
+  padding-top: 15px;
+  .logo {
+    float: left;
+    display: inline-block;
+    padding-right: 50px;
+  }
+  .slogan {
+    display: inline-block;
+    float: left;
+    .text {
+      max-width: 139px;
+      padding-right: 75px;
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .t-map {
+      & a {
+        color: #ed1d24;
+        text-decoration: underline;
+        background: url("../img/marker.png") left center no-repeat;
+        padding: 2px 0 7px 26px;
+        cursor: pointer;
+      }
+    }
+  }
+  .top-menu {
+    display: inline-block;
+    .column {
+      display: inline-block;
+      padding-right: 50px;
+      padding-top: 15px;
+      float: left;
+      font-size: 14px;
+      a {
+        display: block;
+        text-decoration: none;
+        padding-bottom: 20px;
+        &.account {
+          background: url("../img/acc.png") no-repeat;
+          padding-left: 25px;
+        }
+        span {
+          font-style: italic;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #ed1d24;
+        }
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+  .top-contacts {
+    float: right;
+    p {
+      margin-top: 0;
+      padding-top: 15px;
+      font-size: 14px;
+    }
+    a {
+      text-decoration: none;
+      float: right;
+      &.tel {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+      }
+    }
+  }
+  .socials {
+    display: block;
+    margin-bottom: 5px;
+    max-width: 30px;
+    text-align: center;
+    float: right;
+
+    a {
+      color: #514e4e;
+      img {
+        filter: grayscale(100%);
+        opacity: .3;
+        &:hover {
+          filter: none;
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 
