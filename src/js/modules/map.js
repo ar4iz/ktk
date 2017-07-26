@@ -7,6 +7,7 @@ function YandexReadyHandlero9fzxgo6() {
     },{
         suppressMapOpenBlock: true
     });
+
     map.geoObjects.add(new ymaps.GeoObject({
             geometry: {
                 type: "Point",
