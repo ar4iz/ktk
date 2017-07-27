@@ -1,5 +1,4 @@
 header {
-  max-width: 1170px;
   margin: 0 auto;
 
   .top-bar {
@@ -8,16 +7,18 @@ header {
     .logo {
       float: left;
       display: inline-block;
-      padding-right: 50px;
+      padding-right: 69px;
     }
     .slogan {
       display: inline-block;
       float: left;
+      padding-right: 66px;
+      max-width: 142px;
       .text {
-        max-width: 139px;
-        padding-right: 75px;
+        padding-right: 0;
         margin-top: 25px;
         font-size: 16px;
+        font-family: $font-bold;
         font-weight: 700;
       }
       .t-map {
@@ -34,9 +35,10 @@ header {
       display: inline-block;
       .column {
         display: inline-block;
-        padding-right: 50px;
+        padding-right: 34px;
         padding-top: 15px;
         float: left;
+        font-family: $font-family-base;
         font-size: 14px;
         a {
           display: block;
@@ -48,7 +50,7 @@ header {
           }
           span {
             font-style: italic;
-            font-weight: bold;
+            font-family: $font-bold;
             text-transform: uppercase;
             color: #ed1d24;
           }
@@ -134,14 +136,14 @@ header {
         }
       }
       #digital_watch {
-        color: #f00;
-        font-size: 26px;
+        color: #fd0000;
+        font-size: 34px;
         font-weight: bold;
       }
       .clock {
         position: absolute;
         z-index: 5;
-        top: 0;
+        top: -14px;
         left: 140px;
       }
   }
@@ -149,11 +151,14 @@ header {
     max-width: 300px;
     float: right;
     text-align: right;
+    font-family: $font-family-base;
     h1 {
       font-size: 36px;
+      font-weight: normal;
     }
     h2 {
       font-size: 16px;
+      font-weight: normal;
     }
   }
   &:after {
@@ -172,35 +177,43 @@ header {
 .gas {
   background: url("../img/bg.jpg") repeat;
   padding-bottom: 95px;
-  .plus {
-    font-size: 36px;
-    text-align: center;
-  }
-  .prew {
+  .advantages {
     display: block;
-    height: 300px;
-    .block {
-      width: 23%;
-    float: left;
-    .drops {
-      background: url("../img/vector.png") no-repeat;
-      display: table;
-      height: 167px;
-      width: 137px;
-      margin-right: 50px;
-      margin-bottom: 10px;
-      .drop {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+    .plus {
+      font-size: 36px;
+      font-family: $font-light;
+      text-align: center;
+      color: #2c3134;
+    }
+    .prew {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      height: 300px;
+      .block {
+        width: 176px;
+        float: left;
+        .drops {
+          background: url("../img/vector.png") no-repeat;
+          display: table;
+          height: 167px;
+          width: 137px;
+          margin-right: 50px;
+          margin-bottom: 10px;
+          .drop {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+          }
+        }
+        .title {
+          color: #2c3134;
+          font-size: 16px;
+          font-weight: 700;
+          font-family: $font-bold;
+        }
       }
     }
-    .title {
-      color: #2c3134;
-      font-size: 16px;
-      font-weight: 700;
-    }
-  }
   }
 }
 .calculator {
@@ -215,15 +228,16 @@ header {
   position: relative;
   box-sizing: border-box;
   .ranges {
-    width: 405px;
+    width: 445px;
     float: left;
+    box-sizing: border-box;
     .range_names {
       ul {
         margin: 0;
         display: inline-block;
         list-style: none;
         float: left;
-        padding-top: 34px;
+        padding-top: 7px;
         padding-right: 25px;
         padding-left: 0;
         li {
@@ -238,7 +252,7 @@ header {
           .name {
             width: 52px;
             display: inline-block;
-            font-size: 26px;
+            font-size: 24px;
             text-align: center;
             small {
               display: block;
@@ -259,12 +273,15 @@ header {
         &.title {
           font-size: 24px;
           text-transform: uppercase;
-          margin-top: 20px;
-          margin-bottom: 10px;
+          margin-top: 0;
+          margin-bottom: 5px;
         }
       }
       .card_check {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
+      }
+      .range_picker {
+        padding-bottom: 33px;
       }
     }
   }
