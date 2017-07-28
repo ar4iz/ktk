@@ -9,8 +9,8 @@
  */
 //= modules/thumb_slider.js
 //= modules/testimonial_slider.js
-//= modules/sticky_header.js
 //= modules/clock.js
 //= modules/range.js
+//= modules/range_color.js
 //= modules/tab.js
 //= modules/map.js

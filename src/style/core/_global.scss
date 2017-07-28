@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900');
 
+@font-face {
+  font-family: 'LCD2Bold';
+  src: url('../fonts/LCD2Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/LCD2Bold.woff') format('woff'), url('../fonts/LCD2Bold.ttf')  format('truetype'), url('../fonts/LCD2Bold.svg#LCD2Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* animation */
 .animated {
@@ -27,8 +33,9 @@
 
     &:checked {
       &~.fake-checkbox {
-        background: green;
-        border-color: green;
+        background: url("../img/rect.png") no-repeat;
+        border: none;
+        /*border-color: green;*/
       }
     }
   }
@@ -61,79 +68,48 @@
   position: relative;
 }
 
-/* range */
+/* range*/
 input[type="range"] {
-  margin: auto;
+  display: block;
   -webkit-appearance: none;
-  border-radius: 12px;
-  height: 20px;
+  background-color: #bdc3c7;
   width: 365px;
-  overflow: hidden;
-  cursor: pointer;
-  outline: none;
+  height: 9px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #473e4f), color-stop(100%, #51475a));
+  background-image: -webkit-linear-gradient(#473e4f, #51475a);
+  background-image: -moz-linear-gradient(#473e4f, #51475a);
+  background-image: -o-linear-gradient(#473e4f, #51475a);
+  background-image: linear-gradient(#ed1d24, #ed1d24);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
 }
-
-::-webkit-slider-runnable-track {
-  background: #ddd;
-  box-sizing: border-box;
+input[type="range"]:focus {
 }
-
-/*
- * 1. Set to 0 height and width, and remove border for a slider without a thumb
- */
-::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  background-image: url("../img/disc.png");
   width: 28px;
   height: 29px;
-  background-image: url("../img/disc.png");
+  border-radius: 50%;
   margin-left: -4px;
-  border: none;
-  outline: none;
-  box-shadow: -100vw 0 0 100vw red;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}​
+ input[type=range]::-webkit-slider-runnable-track {
+   box-shadow: none;
+   border: none;
+   background: transparent;
+   -webkit-appearance: none;
+ }
+ input[type="range"]::-webkit-slider-thumb:hover {
+   /*background-color: white;*/
+ }
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
 }
 
-::-moz-range-track {
-  height: 40px;
-  background: #ddd;
-}
 
-::-moz-range-thumb {
-  background: #fff;
-  height: 40px;
-  width: 20px;
-  border: 3px solid #999;
-  border-radius: 0 !important;
-  box-shadow: -100vw 0 0 100vw red;
-  box-sizing: border-box;
-}
 
-::-ms-fill-lower {
-  background: red;
-}
-
-::-ms-thumb {
-  background: #fff;
-  border: 2px solid #999;
-  height: 40px;
-  width: 20px;
-  box-sizing: border-box;
-}
-
-::-ms-ticks-after {
-  display: none;
-}
-
-::-ms-ticks-before {
-  display: none;
-}
-
-::-ms-track {
-  background: #ddd;
-  color: transparent;
-  height: 40px;
-  border: none;
-}
-
-::-ms-tooltip {
-  display: none;
-}
